@@ -392,11 +392,11 @@ a .new {
 }
 
 .elementor-widget-icon-box:hover svg {
-    fill: var(--e-global-color-secondary);
+	/*fill: var(--e-global-color-secondary);*/
 }
 
 .elementor-widget-icon-box:hover .elementor-icon-box-title a {
-    color: var(--e-global-color-secondary);
+    /*color: var(--e-global-color-secondary);*/
 }	
 	
 	
