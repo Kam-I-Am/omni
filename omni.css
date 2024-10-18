@@ -1,6 +1,3 @@
-<style type="text/css">
-
-	
 /*** TYPOGRAPHY **************************************************/
 
 /* classes that mirror Elementor Site Settings */	
@@ -1149,6 +1146,4 @@ a.dialog-close-button:focus {
 	
 #docs-sidebar-left li li, .docs-mobile-nav-popup li li{
     border: 0px !important;
-}	
-	
-</style>
+}
