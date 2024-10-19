@@ -887,12 +887,12 @@ button.cky-show-desc-btn, button.cky-accordion-btn {
 	transition-duration: .3s;
 }	
 	
-.omni-reveal-on-upscroll.omni-upscroll {
+.omni-reveal-on-upscroll.omni-revealed-on-upscroll {
 	padding-top: 0px;
 	transform: translateY(-150px);
 }	
 	
-.omni-main-header-solid-bg {
+.omni-header-bg-on-scroll {
 	padding-top: 0px !important;
     backdrop-filter: blur(3px);
     border-bottom:0px;
@@ -900,16 +900,16 @@ button.cky-show-desc-btn, button.cky-accordion-btn {
 
 }
 	
-.omni-main-header-solid-bg #main-nav-svg-logo-box {
+.omni-header-bg-on-scroll #main-nav-svg-logo-box {
     width: 100px;
 }
 
 	
-.omni-main-header-solid-bg #omni-main-header-full-row {
+.omni-header-bg-on-scroll #omni-main-header-full-row {
     padding-bottom: 0px;
 }
 
-.omni-main-header-solid-bg a.e-con-full {
+.omni-header-bg-on-scroll a.e-con-full {
     padding-top: 0px;
 }	
 
