@@ -222,6 +222,10 @@ a .new {
 }
 	
 /*** BUTTONS **************************************************/
+
+.elementor-button-content-wrapper {
+    gap: .5rem;
+}/* reflect this with icon box "buttons" */
 	
 /* 3D Press Effect */
 	
@@ -286,6 +290,9 @@ a .new {
 
 /* right arrow */
 .omni-icon-hover-right .elementor-button:hover .elementor-button-icon {
+    transform: translateX(.5rem);
+}
+a:hover .omni-icon-hover-right .elementor-icon {
     transform: translateX(.5rem);
 }
 
@@ -388,7 +395,7 @@ a .new {
 }
 
 .elementor-widget-icon-box .elementor-icon-box-icon {
-    margin-top: .25rem;
+    margin-top: .15rem;
 }
 
 .elementor-widget-icon-box:hover svg {
@@ -907,10 +914,6 @@ button.cky-show-desc-btn, button.cky-accordion-btn {
 	
 .omni-header-bg-on-scroll #omni-main-header-full-row {
     padding-bottom: 0px;
-}
-
-.omni-header-bg-on-scroll a.e-con-full {
-    padding-top: 0px;
 }	
 
 /*** MEGA MENU **************************************************/	
@@ -1004,9 +1007,9 @@ nav a.elementor-item:focus {
 /*** LANGUAGE **************************************************/
 	
 /*Icon Popout*/
-#gt-translation-popout{
-	transform: translateY(-90px);
-	transition-duration: .2s;
+div#gt-translation-popout {
+	transform: translateY(-100px);
+	transition-duration: .4s !important;
 }		
 	
 #gt-translation-popout.active-gt-translation-popout {
@@ -1147,3 +1150,117 @@ a.dialog-close-button:focus {
 #docs-sidebar-left li li, .docs-mobile-nav-popup li li{
     border: 0px !important;
 }
+
+/* smooth logo carousel */
+
+.omni-logo-carousel:before {
+    content:'';
+    display: block;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 200px;
+    height: 100%;
+    z-index: 2;
+    background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 50%, rgba(255,255,255,0) 100%);
+}
+
+.omni-logo-carousel:after {
+    content:'';
+    display: block;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    width: 200px;
+    height: 100%;
+    z-index: 2;
+    background: linear-gradient(90deg, rgba(255,255,255,0) 0%, rgba(255,255,255,1) 50%, rgba(255,255,255,1) 100%);
+}
+
+@media screen and (max-width: 767px){
+    .omni-logo-carousel:after , .omni-logo-carousel:before  {
+        width: 100px;
+    }
+}
+
+/* Video accessibility */
+	
+.omni-pause-play-for-auto-vid, .omni-pause-play-for-auto-vid * {
+    transition-duration: .2s;
+}
+
+.omni-pause-play-for-auto-vid {
+    position: absolute;
+    background: rgba(0,0,0,.5) !important;
+    width: 32px;
+    height: 32px;
+    z-index: 2;
+    right: 10px;
+    bottom: 10px;
+    border-radius: 4px !important;
+		padding: 0px !important;
+		border: none !important;
+}
+.omni-pause-play-for-auto-vid:hover {
+    background: rgba(0,0,0,1) !important;
+}
+
+.omni-pause-play-for-auto-vid i {
+    display: block;
+    width: 2px;
+    height: 16px;
+    background: white;
+    opacity: 1;
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    top: 0px;
+    bottom: 0px;
+    margin: auto;
+    border-radius: 1px;
+}
+
+.omni-pause-play-for-auto-vid .play-pause-line-one {
+    transform: translateX(4px);
+    background: white;
+}
+
+.omni-pause-play-for-auto-vid .play-pause-line-two {
+    background: white;
+    transform: translateX(-4px);
+    z-index: 2;
+}
+
+.omni-pause-play-for-auto-vid .play-pause-line-three {
+    background: white;
+    transform: translateX(-4px);
+    z-index: 1;
+}
+
+.play-pause-line-one.omni-auto-vid-paused {
+    transform: rotate(-60deg) translateY(-1px) translateX(3.5px);
+    height: 16px;
+}
+
+.play-pause-line-two.omni-auto-vid-paused {
+    transform: translateX(-5.25px);
+}
+
+.play-pause-line-three.omni-auto-vid-paused {
+    transform: rotate(60deg) translateY(1px) translateX(3.5px);
+    height: 16px;
+}
+
+/*** HOVER CONTROLL **********/
+	
+.omni-hover-color_secondary:hover .elementor-heading-title a {
+    color: var(--e-global-color-secondary) !important;
+}	
+	
+.omni-hover-color_secondary .elementor-icon-box-wrapper:hover .elementor-icon-box-title a {
+    color: var(--e-global-color-secondary) !important;
+}
+
+.omni-hover-color_secondary .elementor-icon-box-wrapper:hover .elementor-icon svg {
+    fill: var(--e-global-color-secondary) !important;
+}	
