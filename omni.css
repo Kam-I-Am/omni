@@ -265,6 +265,13 @@ a .new {
 	border: 1px solid transparent !important;
 	color: var(--e-global-color-primary) !important;
 }
+
+/*** Small Button ***/
+	
+.omni-small-button .elementor-button {
+	padding: 10px 15px;
+	font-size: .875rem !important;
+}
 	
 /* Stripped Down Button */
 
@@ -362,13 +369,6 @@ a:hover .omni-icon-hover-right .elementor-icon {
 	
 .omni-button-reset.omni-button-on-dark .elementor-button svg {
     fill: white;
-}		
-	
-/*** BUTTON SIZES ***/
-	
-.omni-small-button .elementor-button {
-	padding: 10px 15px;
-	font-size: .875rem !important;
 }
 		
 /*** SEARCH ***/
